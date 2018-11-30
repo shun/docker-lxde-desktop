@@ -1,0 +1,10 @@
+version: "2"
+
+services:
+  ubuntu-system-container:
+    build: .
+    image: kudoshunsuke/docker-lxde-desktop:16.04
+    container_name: lxde-desktop
+    ports:
+    - "10022:22"
+    privileged: true
